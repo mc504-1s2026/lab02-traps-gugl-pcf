@@ -11,4 +11,6 @@ void timer_irq();
 u64 timer_read();
 void timer_set_alarm(u64 secs);
 
+bool timer_alarm_pending(); //check and consume whether an alarm has fired and return True
+
 #endif
